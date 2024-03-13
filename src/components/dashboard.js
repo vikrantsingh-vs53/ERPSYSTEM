@@ -7,8 +7,8 @@ import './dashboard.css';
 const Dashboard = () => {
     return (
         <div className="dashboard">
-           <h1>Dashboard</h1>
-           
+           <h1 id='dashboard-heading'> Dashboard</h1>
+
            <div className="dashboard-content">
               <div className="tiles-section">
 

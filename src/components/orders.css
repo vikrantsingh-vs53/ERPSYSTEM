@@ -35,6 +35,14 @@
   th:hover {
     background-color: #f4f4f4;
   }
+  #view-detail-btn {
+    background-color: #9BCF53;
+    border: 1px solid green;
+  }
+
+  #view-detail-btn:hover{
+    background-color: #c9e6a1;
+  }
   
   @keyframes fadeIn {
     from {

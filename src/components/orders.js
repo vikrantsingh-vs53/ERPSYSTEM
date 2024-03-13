@@ -82,9 +82,9 @@ const Orders = () => {
                <td>{order.orderDate}</td>
                <td>{order.status}</td>
                <td>
-                 <button onClick={() => handleViewDetails(order)}>View Details</button>
-                 <button onClick={() => handleUpdateStatus(order)}>Update Status</button>
-                 <button onClick={() => handleDeleteOrder(order.orderId)}>Delete</button>
+                 <button id='view-detail-btn' onClick={() => handleViewDetails(order)}>View Details</button>
+                 <button id='update-status-btn' onClick={() => handleUpdateStatus(order)}>Update Status</button>
+                 <button id='delete-btn' onClick={() => handleDeleteOrder(order.orderId)}>Delete</button>
                </td>
              </tr>
           ))}

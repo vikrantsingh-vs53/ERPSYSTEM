@@ -10,6 +10,11 @@
   flex-wrap: wrap;
 }
 
+#dashboard-heading{
+   color: #c67c2d;
+
+}
+
 .tiles-section {
   display: flex;
   justify-content: space-between;
