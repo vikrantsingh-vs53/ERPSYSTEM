@@ -2,7 +2,7 @@ import { Link, useMatch, useResolvedPath } from "react-router-dom"
 
 
 export default function navbar(){
-    const path = window.location.pathname 
+  //  const path = window.location.pathname 
     return (<nav className="nav">
     <Link to="/" className="site-title">
         ERP
