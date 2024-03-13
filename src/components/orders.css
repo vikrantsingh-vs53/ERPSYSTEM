@@ -6,9 +6,11 @@
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background-color: #fff;
-    overflow: hidden;
+    overflow: auto;
+    scrollbar-width: none;
     max-width: 800px;
-    margin: 20px auto;
+    margin: auto;
+    flex: 1 1 600px;
   }
   
   .orders-table {

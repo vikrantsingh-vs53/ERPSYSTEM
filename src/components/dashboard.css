@@ -7,11 +7,14 @@
 .dashboard-content {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .tiles-section {
   display: flex;
-  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  
 }
 
 .tile {
@@ -22,8 +25,7 @@
 }
 
 .calendar-section {
-  flex: 1;
-  margin-left: 20px; /* Adjust spacing between sections */
+  flex: 1 1;
 }
 
 .calendar {
@@ -32,4 +34,4 @@
   border-radius: 5px;
 }
 
-/* Add additional styling as needed */
+

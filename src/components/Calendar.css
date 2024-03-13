@@ -3,7 +3,8 @@
 .calendar-container {
     display: flex;
     justify-content: space-between;
-    margin: 20px;
+    margin: auto;
+    padding: 20px;
   }
   
   .selected-date-orders {

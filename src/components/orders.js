@@ -10,6 +10,7 @@ const Orders = () => {
     { orderId: 1, customerName: 'John Doe', orderDate: '2024-03-11', status: 'Processing' },
     { orderId: 2, customerName: 'Jane Smith', orderDate: '2024-03-12', status: 'Shipped' },
     { orderId: 3, customerName: 'Bob Johnson', orderDate: '2024-03-13', status: 'Delivered' },
+    { orderId: 4, customerName: 'Anuska Johnson', orderDate: '2024-03-15', status: 'Delivered' },
     // Add more mock data as needed
   ];
 
