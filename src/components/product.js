@@ -56,6 +56,7 @@ const Products = () => {
     <div className="tile products-tile">
        <h2>Products</h2>
        <button onClick={handleAddProduct}>Add Product</button>
+       <div className='table'>
         <table className="products-table">
           <thead>
             <tr>
@@ -83,6 +84,7 @@ const Products = () => {
           ))}
          </tbody>
        </table>
+      </div> 
 
       {/* Reusable Modal for adding/editing products */}
       <Modal
