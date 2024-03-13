@@ -7,19 +7,22 @@ import './dashboard.css';
 const Dashboard = () => {
     return (
         <div className="dashboard">
-      <h1>Dashboard</h1>
-      <div className="dashboard-content">
-        <div className="tiles-section">
-          <Orders />
-          <Product />
-        </div>
+           <h1>Dashboard</h1>
+           
+           <div className="dashboard-content">
+              <div className="tiles-section">
 
-        <div className="calendar-section">
-          <Calendar />
-        </div>
-      </div>
+                <Orders />
+                <Product />
 
-    </div>
+              </div>
+
+              <div className="calendar-section">
+                <Calendar />
+              </div>
+           </div>
+
+        </div>
     );
     };
 

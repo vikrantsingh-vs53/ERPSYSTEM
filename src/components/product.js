@@ -49,25 +49,25 @@ const Products = () => {
       setProductsData([...productsData, newProduct]);
     }
 
-    setShowProductModal(false);
+     setShowProductModal(false);
   };
 
   return (
     <div className="tile products-tile">
-      <h2>Products</h2>
-      <button onClick={handleAddProduct}>Add Product</button>
-      <table className="products-table">
-        <thead>
-          <tr>
-            <th>Product ID</th>
-            <th>Name</th>
-            <th>Category</th>
-            <th>Price</th>
-            <th>Stock Quantity</th>
-            <th>Actions</th>
-          </tr>
-        </thead>
-        <tbody>
+       <h2>Products</h2>
+       <button onClick={handleAddProduct}>Add Product</button>
+        <table className="products-table">
+          <thead>
+            <tr>
+             <th>Product ID</th>
+             <th>Name</th>
+             <th>Category</th>
+             <th>Price</th>
+             <th>Stock Quantity</th>
+             <th>Actions</th>
+            </tr>
+         </thead>
+         <tbody>
           {productsData.map((product) => (
             <tr key={product.productId}>
               <td>{product.productId}</td>
@@ -81,8 +81,8 @@ const Products = () => {
               </td>
             </tr>
           ))}
-        </tbody>
-      </table>
+         </tbody>
+       </table>
 
       {/* Reusable Modal for adding/editing products */}
       <Modal
@@ -92,10 +92,10 @@ const Products = () => {
       >
         {/* Add form or input fields to enter product details */}
         <label>Name:</label>
-        <input
-          type="text"
-          value={selectedProduct?.name || ''}
-          onChange={(e) =>
+         <input
+            type="text"
+            value={selectedProduct?.name || ''}
+            onChange={(e) =>
             setSelectedProduct((prevProduct) => ({
               ...prevProduct,
               name: e.target.value,

@@ -21,6 +21,7 @@ const Orders = () => {
 
   const requestSort = (key) => {
     let direction = 'ascending';
+
     if (sortConfig.key === key && sortConfig.direction === 'ascending') {
       direction = 'descending';
     }
@@ -33,10 +34,13 @@ const Orders = () => {
     sortedData.sort((a, b) => {
       if (direction === 'ascending') {
         return a[key] > b[key] ? 1 : -1;
-      } else {
+      }
+       else 
+      {
         return a[key] < b[key] ? 1 : -1;
       }
     });
+
     setOrdersData(sortedData);
   };
 
@@ -58,32 +62,33 @@ const Orders = () => {
   return (
     <div className="tile orders-tile">
       <h2>Orders</h2>
-      <table className="orders-table">
-        <thead>
-          <tr>
-            <th onClick={() => requestSort('orderId')}>Order ID</th>
-            <th onClick={() => requestSort('customerName')}>Customer Name</th>
-            <th onClick={() => requestSort('orderDate')}>Order Date</th>
-            <th onClick={() => requestSort('status')}>Status</th>
-            <th>Actions</th>
-          </tr>
-        </thead>
-        <tbody>
-          {ordersData.map((order) => (
-            <tr key={order.orderId}>
-              <td>{order.orderId}</td>
-              <td>{order.customerName}</td>
-              <td>{order.orderDate}</td>
-              <td>{order.status}</td>
-              <td>
-                <button onClick={() => handleViewDetails(order)}>View Details</button>
-                <button onClick={() => handleUpdateStatus(order)}>Update Status</button>
-                <button onClick={() => handleDeleteOrder(order.orderId)}>Delete</button>
-              </td>
-            </tr>
+
+       <table className="orders-table">
+           <thead>
+            <tr>
+             <th onClick={() => requestSort('orderId')}>Order ID</th>
+             <th onClick={() => requestSort('customerName')}>Customer Name</th>
+             <th onClick={() => requestSort('orderDate')}>Order Date</th>
+             <th onClick={() => requestSort('status')}>Status</th>
+             <th>Actions</th>
+           </tr>
+          </thead>
+          <tbody>
+            {ordersData.map((order) => (
+             <tr key={order.orderId}>
+               <td>{order.orderId}</td>
+               <td>{order.customerName}</td>
+               <td>{order.orderDate}</td>
+               <td>{order.status}</td>
+               <td>
+                 <button onClick={() => handleViewDetails(order)}>View Details</button>
+                 <button onClick={() => handleUpdateStatus(order)}>Update Status</button>
+                 <button onClick={() => handleDeleteOrder(order.orderId)}>Delete</button>
+               </td>
+             </tr>
           ))}
-        </tbody>
-      </table>
+          </tbody>
+       </table>
 
       {/* Reusable Modal for displaying order details */}
       <Modal

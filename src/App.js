@@ -10,11 +10,11 @@ function App() {
     <>
      <Navbar />
      <div className="container">
-      <Routes>
+       <Routes>
         <Route path="/" element={<Dashboard />} />
         <Route path="/product" element={<Product />}  />
         <Route path="/orders" element={<Orders />}  />
-      </Routes>
+       </Routes>
      </div>
      </>
   )
