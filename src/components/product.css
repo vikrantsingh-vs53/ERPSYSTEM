@@ -1,0 +1,75 @@
+/* src/components/product.css */
+
+.product-tile {
+    margin-top: 20px;
+  }
+  
+  .product-table {
+    width: 80%;
+    margin:0 auto;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  .product-table th,
+  .product-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .product-table th {
+    background-color: #f2f2f2;
+  }
+  
+  .product-table button {
+    margin-right: 5px;
+  }
+  
+  .modal label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .modal input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .modal button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .modal button:hover {
+    background-color: #45a049;
+  }
+  
+  .modal-content {
+    max-width: 400px;
+    margin: auto;
+  }
+  
+  .modal-title {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
