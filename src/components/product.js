@@ -55,7 +55,7 @@ const Products = () => {
   return (
     <div className="tile products-tile">
        <h2>Products</h2>
-       <button onClick={handleAddProduct}>Add Product</button>
+       <button id='add-product' onClick={handleAddProduct}>Add Product</button>
        <div className='table'>
         <table className="products-table">
           <thead>
@@ -77,8 +77,8 @@ const Products = () => {
               <td>{product.price}</td>
               <td>{product.stockQuantity}</td>
               <td>
-                <button onClick={() => handleEditProduct(product)}>Edit</button>
-                <button onClick={() => handleDeleteProduct(product.productId)}>Delete</button>
+                <button id='edit-product' onClick={() => handleEditProduct(product)}>Edit</button>
+                <button id='delete-product' onClick={() => handleDeleteProduct(product.productId)}>Delete</button>
               </td>
             </tr>
           ))}

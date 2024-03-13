@@ -43,6 +43,27 @@
   .product-table button {
     margin-right: 5px;
   }
+  #add-product{
+    background-color: #9BCF53;
+    border: 1px solid green;
+  }
+  #add-product:hover{
+    background-color: #b9ce9b;
+  }
+  #edit-product{
+    background-color: #0ecaba;
+    border: 1px solid rgb(3, 181, 216);
+  }
+  #edit-product:hover{
+    background-color: #b8c5c4;
+  }
+  #delete-product{
+    background-color: #cf536a;
+    border: 1px solid rgb(178, 8, 36);
+  }
+  #delete-product:hover{
+    background-color: #d9a2ac;
+  }
   
   .modal label {
     display: block;
